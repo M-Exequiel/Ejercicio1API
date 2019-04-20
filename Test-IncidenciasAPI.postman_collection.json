@@ -1,0 +1,623 @@
+{
+	"info": {
+		"_postman_id": "40d156d9-a90c-40f1-8e95-a93857aacf08",
+		"name": "Test-IncidenciasAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4567/usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"MercadoShops\",\n            \"propietario\": {\n                \"id\": 4,\n                \"nombre\": \"Alexis Joaquin\",\n                \"apellido\": \"Donato\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto"
+					]
+				},
+				"description": "Muestro todos los usuarios creados"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/proyecto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"MercadoShops\",\n            \"propietario\": {\n                \"id\": 4,\n                \"nombre\": \"Alexis Joaquin\",\n                \"apellido\": \"Donato\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto"
+					]
+				},
+				"description": "Muestro todos los proyectos creados"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"MercadoShops\",\n            \"propietario\": {\n                \"id\": 4,\n                \"nombre\": \"Alexis Joaquin\",\n                \"apellido\": \"Donato\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					]
+				},
+				"description": "Muestro todos los incidentes creados"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/proyecto/2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"MercadoShops\",\n            \"propietario\": {\n                \"id\": 4,\n                \"nombre\": \"Alexis Joaquin\",\n                \"apellido\": \"Donato\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto/2",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto",
+						"2"
+					]
+				},
+				"description": "Muestro un proyecto con determinado id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/usuario/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"MercadoShops\",\n            \"propietario\": {\n                \"id\": 4,\n                \"nombre\": \"Alexis Joaquin\",\n                \"apellido\": \"Donato\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/usuario/3",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"usuario",
+						"3"
+					]
+				},
+				"description": "Muestro un usuario con determinado id\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 4,\n            \"nombre\": \"Alexis\",\n            \"apellido\": \"Donato\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"usuario"
+					]
+				},
+				"description": "Creo un nuevo usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"nombre\": \"Rodrigo Joaquin\",\n            \"apellido\": \"Vicente\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"usuario"
+					]
+				},
+				"description": "Modifico un usuario determinado"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/usuario/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"nombre\": \"Rodrigo Joaquin\",\n            \"apellido\": \"Vicente\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/usuario/2",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"usuario",
+						"2"
+					]
+				},
+				"description": "Intento borrar un usuario pero no se puede"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/usuario/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"nombre\": \"Rodrigo Joaquin\",\n            \"apellido\": \"Vicente\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/usuario/4",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"usuario",
+						"4"
+					]
+				},
+				"description": "Borro un usuario y se puede"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/proyecto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"Marketplace\",\n            \"propietario\": {\n                \"id\": 1,\n                \"nombre\": \"Rodrigo Joaquin\",\n                \"apellido\": \"Vicente\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto"
+					]
+				},
+				"description": "Modifico la descripcion de un proyecto"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/proyecto/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 2,\n            \"titulo\": \"Marketplace\",\n            \"propietario\": {\n                \"id\": 1,\n                \"nombre\": \"Rodrigo Joaquin\",\n                \"apellido\": \"Vicente\"\n            }\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto",
+						"1"
+					]
+				},
+				"description": "Intento borrar un proyecto pero tiene incidentes asociados"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					]
+				},
+				"description": "Modifico un incidente"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/proyecto?idPropietario=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/proyecto?idPropietario=2",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"proyecto"
+					],
+					"query": [
+						{
+							"key": "idPropietario",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Muestro proyectos con idPropietario=2\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente?idResponsable=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente?idResponsable=2",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					],
+					"query": [
+						{
+							"key": "idResponsable",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Muestro incidentes en que el idResponsable=2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente?idReportador=3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente?idReportador=3",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					],
+					"query": [
+						{
+							"key": "idReportador",
+							"value": "3"
+						}
+					]
+				},
+				"description": "Muestro incidentes en que el idReportador=3"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente?idProyecto=2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente?idProyecto=2",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					],
+					"query": [
+						{
+							"key": "idProyecto",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Muestro los incidentes asociados al proyecto con id=2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente?estado=ASIGNADO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente?estado=ASIGNADO",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "ASIGNADO"
+						}
+					]
+				},
+				"description": "Muestro los incidentes abiertos"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4567/incidente?estado=RESUELTO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"id\": 1,\n            \"clasificacion\": \"NORMAL\",\n            \"descripcion\": \"No se generan ventas a traves de Point\",\n            \"reportador\": {\n                \"id\": 3,\n                \"nombre\": \"Fabian\",\n                \"apellido\": \"Lopez\"\n            },\n            \"responsable\": {\n                \"id\": 2,\n                \"nombre\": \"Marcos\",\n                \"apellido\": \"Lopez\"\n            },\n            \"proyecto\": {\n                \"id\": 1,\n                \"titulo\": \"MercadoPago\",\n                \"propietario\": {\n                    \"id\": 1,\n                    \"nombre\": \"Rodrigo\",\n                    \"apellido\": \"Vicente\"\n                }\n            },\n            \"estado\": \"RESUELTO\",\n            \"fechaCreacion\": \"Jul 9, 3919 12:00:00 AM\",\n            \"fechaSolucion\": \"Sep 12, 3919 12:00:00 AM\"\n        }"
+				},
+				"url": {
+					"raw": "localhost:4567/incidente?estado=RESUELTO",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"incidente"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "RESUELTO"
+						}
+					]
+				},
+				"description": "Muestro incidentes resueltos"
+			},
+			"response": []
+		}
+	]
+}
